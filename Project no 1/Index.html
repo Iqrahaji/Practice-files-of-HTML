@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-<!--  <!DOCTYPE html is just a documentry tag.> -->
 <html lang="en">
-  <!-- language is donate as lang 
-     and en = english it can be other but en is good and easy. -->
-  <head>
-    <!-- head tag contains the whole main info of the page -->
-    <meta charset="UTF-8" />
-    <!-- meta tags contains the info in this it holds the characterset as UTF-8 UTF-8 means “Unicode Transformation Format – 8-bit. meta tags gave the info to the browser. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 
-    1. name="viewport"
-       It tells the browser:
-       "I want to control how the page behaves on mobile screens."
-       
-     2. content="width=device-width"
-      This means: 
-      "Set the page width equal to the width of the device."  
-      📌 If the mobile is 360px wide → make website width 360px.
-
-           Without this:
-           Website shrinks
-           Looks zoomed out
-           Text becomes tiny
-
-    3. initial-scale=1.0
-        This means:
-        "Show the webpage at normal zoom level (100%) when it first loads."
-
-        Without this:
-        Website looks zoomed in or zoomed out
-        Layout becomes broken   -->
-        <ul>
-          <li>
-       <a href="tel:+923277581675">Call Ehsan</a>
-
-          </li>
-        </ul>
-        
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacos shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1>Welcome to the little - Tacos shop</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#about">About LTS</a></li>
+        <li><a href="/#menu">Our menu</a></li>
+        <li><a href="hours.html">Store hours</a></li>
+      </ul>
+    </nav>
+     <figure>
+      <img src="reference.jpg" alt="Coffee shop" width="500px" height="300px">
+      <figcaption>Tacos and drinks</figcaption>
+    </figure>
+  </header>
+  <main>
+    <article id="about">
+  <hr>
+  <h2>About <a href="LTS">LTS</a></h2>
+  <p><abbr title="The little tacos shop. "></abbr>LTS</a> was founded in 2022. Our shop was built from <b>a love of Tacos</b>. We hope our shop adds a unique and interesting place to our little towm.</p>
+  
+  <aside>
+  <h3>Taco Trivia</h3>
+  <details>
+  <summary>When did tacos first appears in the United States?</summary>
+  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur similique porro libero vero omnis unde cupiditate facilis. Deserunt quod nemo maiores alias. Quo, voluptatum.
+    <time datetime="1905">1905</time>
+    (Souce: <cite>
+      <a href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/" target="_blank">smithsonian magazines</a>
+    </cite>).
+  </p>
+  </details>
+  </aside>
+</article>
+<hr>
+<article id="menu">
+   <h2>Our menu</h2>
+   <table>
+    <thead>
+      <caption>Our Tacos</caption>
+      <tr>
+        <th>Tacos</th>
+        <th scope="col" title="Quantity">Qty</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="col" colspan="3">Crunchy</th>
+        <td>1</td>
+        <td>$1.50</td>
+      </tr>
+    </tbody>
+   </table>
+</article>
+  </main>
+  <hr>
+  <footer>
+    <p>
+    created by &copy; Iqra haji | All rights reserved.
+    </p>
+  </footer>
+  </div>
+</body>
 </html>
